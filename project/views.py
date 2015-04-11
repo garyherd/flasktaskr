@@ -8,7 +8,9 @@ from flask import Flask, flash, redirect, render_template, \
 app = Flask(__name__)
 app.config.from_object('_config')
 
+
 # helper functions
+
 
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
@@ -23,6 +25,7 @@ def login_required(test):
             flash('You need to login first')
             return redirect(url_for('login'))
     return wrap
+
 
 # route handlers
 

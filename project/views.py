@@ -30,7 +30,7 @@ def login_required(test):
         if 'logged_in' in session:
             return test(*args, **kwargs)
         else:
-            flash('You need to login first')
+            flash('You need to login first.')
             return redirect(url_for('login'))
     return wrap
 
@@ -55,6 +55,7 @@ def closed_tasks():
 # route handlers
 
 @app.route('/logout/')
+@login_required
 def logout():
     session.pop('logged_in', None)
     session.pop('user_id', None)
@@ -125,7 +126,7 @@ def complete(task_id):
     new_id = task_id
     db.session.query(Task).filter_by(task_id=new_id).update({"status": 0})
     db.session.commit()
-    flash('The task is complete. Nice')
+    flash('The task is complete. Nice.')
     return redirect(url_for('tasks'))
 
 

@@ -63,11 +63,6 @@ h2 {
   padding: 0.5em;
 }
 
-.error {
-  color: red
-  font-size: .83em
-  background: #FFFFFF;
-}
 
 .datagrid table {
   border-collapse: collapse;
@@ -126,3 +121,16 @@ h2 {
   text-decoration:none;
   position:relative;
 }
+
+body {
+    padding: 60px 0;
+    background: #fffffff;
+}
+
+.footer {
+    padding-top: 30px;
+}
+
+.error {
+    color: red;
+    font-size: .8em;}

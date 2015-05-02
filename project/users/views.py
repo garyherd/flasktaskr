@@ -6,13 +6,14 @@
 ###################
 
 from functools import wraps
+
 from flask import flash, redirect, render_template, \
     request, session, url_for, Blueprint
 from sqlalchemy.exc import IntegrityError
-
-from forms import RegisterForm, LoginForm
+from .forms import RegisterForm, LoginForm
 from project import db
 from project.models import User
+
 
 
 ###########################
@@ -83,7 +84,7 @@ def register():
             )
             try:
                 db.session.add(new_user)
-                db.session.commot()
+                db.session.commit()
                 flash('Thanks for registering. Please login.')
                 return redirect(url_for('users.login'))
             except IntegrityError:

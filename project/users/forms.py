@@ -33,3 +33,4 @@ class LoginForm(Form):
         'Password',
         validators=[DataRequired()]
     )
+

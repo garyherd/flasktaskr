@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b3077c4-2590-4309-9ada-305d8a4d5365" name="Default" comment="Complete thru Ch15 Deployment options">
-      <change type="DELETED" beforePath="C:\Users\G\Documents\RealPython\flasktaskr\errog.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fabfile.py" afterPath="$PROJECT_DIR$/fabfile.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9b3077c4-2590-4309-9ada-305d8a4d5365" name="Default" comment="" />
     <ignored path="flasktaskr.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -717,7 +713,13 @@
       <option name="project" value="LOCAL" />
       <updated>1430885019520</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix error.log typo">
+      <created>1430886671573</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1430886671573</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -775,7 +777,8 @@
     <MESSAGE value="start blueprint refactor" />
     <MESSAGE value="Complete Ch14, Blueprint refactor" />
     <MESSAGE value="Complete thru Ch15 Deployment options" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete thru Ch15 Deployment options" />
+    <MESSAGE value="fix error.log typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix error.log typo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

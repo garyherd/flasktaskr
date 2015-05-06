@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b3077c4-2590-4309-9ada-305d8a4d5365" name="Default" comment="Complete thru Ch15 Deployment options">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/test.db" afterPath="$PROJECT_DIR$/project/test.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/errog.log" afterPath="$PROJECT_DIR$/errog.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fabfile.py" afterPath="$PROJECT_DIR$/fabfile.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flasktaskr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,7 +76,7 @@
             <entry file="file://$PROJECT_DIR$/fabfile.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.18257757" vertical-offset="0" max-vertical-offset="838">
-                  <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+                  <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -1205,7 +1201,7 @@
     <entry file="file://$PROJECT_DIR$/fabfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18257757" vertical-offset="0" max-vertical-offset="838">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding />
         </state>
       </provider>

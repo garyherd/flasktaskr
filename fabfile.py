@@ -41,3 +41,6 @@ def deploy():
     commit()
     heroku()
     heroku_test()
+
+def testShell():
+    local(r"Out-File c:\users\g\documents\test2.txt -InputObject c:\users\g\documents\test.txt -Encoding Default")

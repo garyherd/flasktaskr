@@ -1,0 +1,7 @@
+
+404 error at 04-05-2015 22:46:35: http://127.0.0.1:5000/does_not_exist
+500 error at 04-05-2015 22:50:33: http://127.0.0.1:5000/
+404 error at 05-05-2015 22:45:37: http://localhost/this-route-does-not-exist/
+404 error at 05-05-2015 22:48:34: http://localhost/this-route-does-not-exist/
+404 error at 05-05-2015 22:51:47: http://localhost/this-route-does-not-exist/
+404 error at 05-05-2015 22:53:12: http://localhost/this-route-does-not-exist/

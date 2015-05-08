@@ -2,6 +2,7 @@ from fabric.api import local, settings, abort
 from fabric.contrib.console import confirm
 
 
+# prep
 def test():
     with settings(warn_only=True):
         result = local("nosetests -v", capture=True)
@@ -23,6 +24,8 @@ def prepare():
     commit()
     push()
 
+# deploy
+
 def pull():
     local("git pull origin master")
 
@@ -41,3 +44,8 @@ def deploy():
     commit()
     heroku()
     heroku_test()
+
+# rollback
+
+def rollback():
+    local("heroku rollback")

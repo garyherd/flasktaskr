@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b3077c4-2590-4309-9ada-305d8a4d5365" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/_config.py" afterPath="$PROJECT_DIR$/project/_config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flasktaskr.iws" />
@@ -28,6 +30,18 @@
     <splitter split-orientation="horizontal" split-proportion="0.4996369">
       <split-first>
         <leaf>
+          <file leaf-file-name="test_users.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/test_users.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="2890">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/project/__init__.py">
               <provider selected="true" editor-type-id="text-editor">
@@ -35,6 +49,40 @@
                   <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
                   <folding>
                     <element signature="e#24#97#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_config.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/project/_config.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.25315005" vertical-offset="0" max-vertical-offset="873">
+                  <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/run.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+                  <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#11#20#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test_main.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/test_main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
+                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#25#34#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -53,10 +101,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fabfile.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="fabfile.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/fabfile.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8178694" vertical-offset="0" max-vertical-offset="952">
+                <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="952">
                   <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
                   <folding />
                 </state>
@@ -67,10 +115,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="test_api_v2.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="test_api_v2.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/test_api_v2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.513173" vertical-offset="1694" max-vertical-offset="2567">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1694" max-vertical-offset="2567">
                   <caret line="149" column="50" selection-start-line="149" selection-start-column="50" selection-end-line="149" selection-end-column="50" />
                   <folding>
                     <element signature="e#25#34#0" expanded="true" />
@@ -80,10 +128,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/project/tasks/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1235" max-vertical-offset="2108">
+                <state vertical-scroll-proportion="1.7720504" vertical-offset="0" max-vertical-offset="2108">
                   <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="92" selection-end-column="59" />
                   <folding>
                     <element signature="e#26#41#0" expanded="true" />
@@ -95,7 +143,7 @@
           <file leaf-file-name="test_tasks.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/test_tasks.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1590" max-vertical-offset="4012">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1794" max-vertical-offset="4012">
                   <caret line="94" column="41" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
                   <folding>
                     <element signature="e#0#9#0" expanded="true" />
@@ -145,16 +193,17 @@
         <option value="$PROJECT_DIR$/project/users/views.py" />
         <option value="$PROJECT_DIR$/error.log" />
         <option value="$PROJECT_DIR$/fabfile.py" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/tests/test_api.py" />
         <option value="$PROJECT_DIR$/project/api_v2/view.py" />
         <option value="$PROJECT_DIR$/project/api/views.py" />
-        <option value="$PROJECT_DIR$/project/_config.py" />
         <option value="$PROJECT_DIR$/tests/test_tasks.py" />
         <option value="$PROJECT_DIR$/project/tasks/views.py" />
         <option value="$PROJECT_DIR$/tests/test_api_v2.py" />
         <option value="$PROJECT_DIR$/project/__init__.py" />
         <option value="$PROJECT_DIR$/project/api_v2/views.py" />
+        <option value="$PROJECT_DIR$/tests/test_run_file.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/project/_config.py" />
       </list>
     </option>
   </component>
@@ -214,6 +263,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flasktaskr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flasktaskr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -260,7 +323,7 @@
       <recent name="C:\Users\G\Documents\RealPython\flasktaskr\project\static\css" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_api_v2">
+  <component name="RunManager" selected="Python.run (1)">
     <configuration default="false" name="run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,30 +342,6 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in test_api" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="flasktaskr" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_api.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -365,6 +404,30 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="flasktaskr" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_tasks.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in test_run_file" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flasktaskr" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_run_file.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -502,18 +565,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.run (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_api" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_api_v2" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_users" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_tasks" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_api_v2" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_users" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_tasks" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_run_file" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_api_v2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.run (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_tasks" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_users" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_api" />
+        <item index="0" class="java.lang.String" itemvalue="Python.run (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_run_file" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_api_v2" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_tasks" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_users" />
       </list>
     </recent_temporary>
   </component>
@@ -785,13 +848,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project/templates/_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="510">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="493">
@@ -972,13 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4089347" vertical-offset="408" max-vertical-offset="1326">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.020070838" vertical-offset="0" max-vertical-offset="847">
@@ -990,16 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="873">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15578465" vertical-offset="0" max-vertical-offset="873">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding>
-            <element signature="e#11#20#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,14 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25697675" vertical-offset="0" max-vertical-offset="860">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/flask_httpauth.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2584">
@@ -1084,14 +1115,6 @@
           <folding>
             <element signature="e#0#22#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_users.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2302406" vertical-offset="337" max-vertical-offset="2805">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="89" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,43 +1152,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1590" max-vertical-offset="4012">
-          <caret line="94" column="41" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/tasks/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1235" max-vertical-offset="2108">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="92" selection-end-column="59" />
-          <folding>
-            <element signature="e#26#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_api_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.513173" vertical-offset="1694" max-vertical-offset="2567">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1694" max-vertical-offset="2567">
           <caret line="149" column="50" selection-start-line="149" selection-start-column="50" selection-end-line="149" selection-end-column="50" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
             <element signature="e#1003#1518#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#24#97#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1181,10 +1174,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1590" max-vertical-offset="4012">
+          <caret line="94" column="41" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/tasks/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7720504" vertical-offset="0" max-vertical-offset="2108">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="92" selection-end-column="59" />
+          <folding>
+            <element signature="e#26#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fabfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8178694" vertical-offset="0" max-vertical-offset="952">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="952">
           <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1326">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_users.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2890">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#24#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="e#11#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25315005" vertical-offset="0" max-vertical-offset="873">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>

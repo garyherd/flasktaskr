@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b3077c4-2590-4309-9ada-305d8a4d5365" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/flasktaskr.db" afterPath="$PROJECT_DIR$/project/flasktaskr.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/test.db" afterPath="$PROJECT_DIR$/project/test.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/__init__.py" afterPath="$PROJECT_DIR$/project/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_api_v2.py" afterPath="$PROJECT_DIR$/tests/test_api_v2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_tasks.py" afterPath="$PROJECT_DIR$/tests/test_tasks.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/api_v2/views.py" afterPath="$PROJECT_DIR$/project/api_v2/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/tasks/views.py" afterPath="$PROJECT_DIR$/project/tasks/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flasktaskr.iws" />
@@ -47,15 +41,25 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/project/api_v2/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.76632303" vertical-offset="2102" max-vertical-offset="2992">
+                <state vertical-scroll-proportion="0.0" vertical-offset="2102" max-vertical-offset="2992">
                   <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
                   <folding>
                     <element signature="e#28#55#0" expanded="true" />
                     <element signature="e#610#788#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fabfile.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/fabfile.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.8178694" vertical-offset="0" max-vertical-offset="952">
+                  <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -699,7 +703,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431250235127</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="completed api, apiv2 with Flask RESTful ext">
+      <created>1431290758793</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1431290758793</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1080,14 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fabfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8178694" vertical-offset="0" max-vertical-offset="952">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/werkzeug/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.039534885" vertical-offset="0" max-vertical-offset="15164">
@@ -1165,12 +1167,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/api_v2/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76632303" vertical-offset="2102" max-vertical-offset="2992">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2102" max-vertical-offset="2992">
           <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
           <folding>
             <element signature="e#28#55#0" expanded="true" />
             <element signature="e#610#788#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fabfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8178694" vertical-offset="0" max-vertical-offset="952">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

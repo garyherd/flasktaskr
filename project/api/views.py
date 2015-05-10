@@ -3,7 +3,8 @@
 
 from functools import wraps
 from flask import flash, redirect, jsonify, \
-    session, url_for, Blueprint, make_response
+    session, url_for, Blueprint, make_response, request
+from flask_restful import reqparse
 
 from project import db
 from project.models import Task
@@ -39,6 +40,9 @@ def open_tasks():
 def closed_tasks():
     return db.session.query(Task).filter_by(
         status='0').order_by(Task.due_date.asc())
+
+parser = reqparse.RequestParser()
+parser.add_argument('task', type=str)
 
 
 ################
@@ -79,6 +83,20 @@ def task(task_id):
     else:
         result = {"error": "Element does not exist"}
         code = 404
+    return make_response(jsonify(result), code)
+
+@api_blueprint.route('/api/v1/add_task', methods=['POST'])
+def  api_add_task():
+    error = None
+    # TODO: maybe wrap this in a try/catch block
+    if request.method == 'POST':
+
+        args = parser.parse_args()
+        result = {"status": "POST was received", "task_to_add": args['task']}
+        code = 201
+    else:
+        result = {"status": "GET request not allowed here"}
+        code = 405
     return make_response(jsonify(result), code)
 
 

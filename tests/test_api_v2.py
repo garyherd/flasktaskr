@@ -1,11 +1,14 @@
-# tests/test_api.py
+# tests/test_api_v2.py
 
 
 import os
+import base64
 import unittest
 from datetime import date
+import json
 
-from project import app, db
+
+from project import app, db, bcrypt
 from project._config import basedir
 from project.models import Task
 
@@ -13,7 +16,7 @@ from project.models import Task
 TEST_DB = 'test.db'
 
 
-class APITests(unittest.TestCase):
+class APIv2Tests(unittest.TestCase):
 
     ##########################
     #### setup and teardown ##
@@ -65,13 +68,20 @@ class APITests(unittest.TestCase):
         )
         db.session.commit()
 
+    def register(self, name, email, password, confirm):
+        return self.app.post(
+            'register/',
+            data=dict(name=name, email=email, password=password,
+                      confirm=confirm),
+            follow_redirects=True)
+
     ################
     #### tests #####
     ################
 
     def test_collection_endpoint_returns_correct_data(self):
         self.add_tasks()
-        response = self.app.get('api/v1/tasks/', follow_redirects=True)
+        response = self.app.get('api/v2/tasks/', follow_redirects=True)
         self.assertEquals(response.status_code, 200)
         self.assertEquals(response.mimetype, 'application/json')
         self.assertIn(b'Run around in circles', response.data)
@@ -80,7 +90,7 @@ class APITests(unittest.TestCase):
 
     def test_resource_endpoint_returns_correct_data(self):
         self.add_tasks()
-        response = self.app.get('api/v1/tasks/2', follow_redirects=True)
+        response = self.app.get('api/v2/tasks/2', follow_redirects=True)
         self.assertEquals(response.status_code, 200)
         self.assertEquals(response.mimetype, 'application/json')
         self.assertIn(b'Purchase Real Python', response.data)
@@ -89,37 +99,27 @@ class APITests(unittest.TestCase):
 
     def test_invalid_resource_endpoint_returns_error(self):
         self.add_tasks()
-        response = self.app.get('api/v1/tasks/209', follow_redirects=True)
+        response = self.app.get('api/v2/tasks/209', follow_redirects=True)
         self.assertEquals(response.status_code, 404)
         self.assertEquals(response.mimetype, 'application/json')
         self.assertIn(b'Element does not exist', response.data)
 
 
     def test_valid_user_can_insert_a_task(self):
-        data=dict(task="test api task")
-        response = self.app.post('api/v1/add_task', data=data)
+        self.register('Michael', 'michael@realpython.com', 'python2015',
+              'python2015')
+        encoded = base64.standard_b64encode('Michael:python2015')
+        header = {'authorization': 'Basic {}'.format(encoded),
+                  'Content-Type': 'application/json'}
+        data = {'name': "test api task", 'due_date': '05/25/2018',
+                'priority': 6}
+        # data = dict(name="test api task", due_date='05/25/2018',
+        #         priority= 6)
+        response = self.app.post('api/v2/tasks/', headers=header,
+                                 data=json.dumps(data))
+        # response = requests.post(url='api/v2/tasks/',
+        #                          auth=HTTPBasicAuth('Michael', 'python2015'),
+        #                          data=data)
         self.assertEquals(response.status_code, 201)
         self.assertEquals(response.mimetype, 'application/json')
-        self.assertIn(b'POST was received', response.data)
-
-
-    def test_invalid_user_can_not_insert_a_task(self):
-        pass
-        # TODO: implement test_invalid_user_can_not_insert_a_task
-
-
-    def test_invalid_data_returns_correct_data(self):
-        pass
-        # TODO: implement test_invalid_data_returns_correct_data
-
-    def test_405_error_on_add_task(self):
-        response = self.app.get('api/v1/add_task')
-        self.assertEquals(response.status_code, 405)
-        self.assertIn(b'GET request not allowed here',
-                      response.data)
-
-
-
-
-if __name__ == '__main__':
-    unittest.main()
+        self.assertIn(b'Entry was successfully posted', response.data)

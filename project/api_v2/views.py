@@ -2,19 +2,18 @@
 
 
 from functools import wraps
-from flask import flash, redirect, jsonify, \
-    session, url_for, Blueprint, make_response, g
+from flask import flash, redirect, session, url_for, Blueprint, g
 from flask_restful import reqparse, Resource
 from flask_httpauth import HTTPBasicAuth
 
-from project import db, _api_v2, bcrypt
+from project import db, api__v2, bcrypt
 from project.models import Task, User
 
 from datetime import datetime
 
 
 ################
-#### config ####
+#  config   ####
 ################
 
 api_v2_blueprint = Blueprint('api_v2', __name__)
@@ -22,7 +21,7 @@ api_v2_blueprint = Blueprint('api_v2', __name__)
 auth = HTTPBasicAuth()
 
 ##########################
-#### helper functions ####
+#   helper functions ####
 ##########################
 
 
@@ -46,6 +45,7 @@ def closed_tasks():
     return db.session.query(Task).filter_by(
         status='0').order_by(Task.due_date.asc())
 
+
 @auth.verify_password
 def verify_password(username, password):
     user = User.query.filter_by(name=username).first()
@@ -57,12 +57,11 @@ def verify_password(username, password):
         return False
 
 
-
 ###################
-#### Resources ####
+#   Resources     #
 ###################
 
-class API_TaskList(Resource):
+class ApiTaskList(Resource):
     def __init__(self):
         self.post_parser = reqparse.RequestParser()
         self.post_parser.add_argument('name', type=str, location='json')
@@ -90,7 +89,7 @@ class API_TaskList(Resource):
         args = self.post_parser.parse_args()
         new_task = Task(
             name=args['name'],
-            due_date=datetime.strptime(args['due_date'],'%m/%d/%Y').date(),
+            due_date=datetime.strptime(args['due_date'], '%m/%d/%Y').date(),
             priority=args['priority'],
             posted_date=datetime.utcnow(),
             status='1',
@@ -104,7 +103,13 @@ class API_TaskList(Resource):
         return result, code
 
 
-class API_Task(Resource):
+class ApiTask(Resource):
+    def __init__(self):
+        self.post_parser = reqparse.RequestParser()
+        self.post_parser.add_argument('name', type=str, location='json')
+        self.post_parser.add_argument('due_date', type=str, location='json')
+        self.post_parser.add_argument('priority', type=int, location='json')
+
     def get(self, task_id):
         result = db.session.query(Task).filter_by(task_id=task_id).first()
         if result:
@@ -121,14 +126,50 @@ class API_Task(Resource):
         else:
             result = {"error": "Element does not exist"}
             code = 404
-        return make_response(jsonify(result), code)
+        return result, code
 
+    @auth.login_required
+    def put(self, task_id):
+        new_id = task_id
+        task = db.session.query(Task).filter_by(task_id=new_id)
+        if task:
+            args = self.post_parser.parse_args()
+            updated_task = {
+                'name': args['name'],
+                'due_date': datetime.strptime(
+                    args['due_date'], '%m/%d/%Y').date(),
+                'priority': args['priority'],
+                'posted_date': datetime.utcnow(),
+            }
+            task.update(updated_task)
+            db.session.commit()
+            code = 201
+            result = {"status": "task updated successfully"}
+        else:
+            result = {"error": "Element does not exist"}
+            code = 404
 
+        return result, code
+
+    @auth.login_required
+    def delete(self, task_id):
+        new_id = task_id
+        task = db.session.query(Task).filter_by(task_id=new_id)
+        if task:
+            task.delete()
+            db.session.commit()
+            code = 201
+            result = {"status": "task deleted"}
+        else:
+            result = {"error": "Element does not exist"}
+            code = 404
+
+        return result, code
 
 
 ################
-#### routes ####
+# routes       #
 ################
 
-_api_v2.add_resource(API_TaskList, '/api/v2/tasks/')
-_api_v2.add_resource(API_Task, '/api/v2/tasks/<int:task_id>')
+api__v2.add_resource(ApiTaskList, '/api/v2/tasks/')
+api__v2.add_resource(ApiTask, '/api/v2/tasks/<int:task_id>')

@@ -2,7 +2,7 @@
 
 
 from flask import Flask, render_template, request, make_response, jsonify
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_restful import Api
 import datetime
@@ -11,7 +11,7 @@ app = Flask(__name__)
 app.config.from_pyfile('_config.py')
 bcrypt = Bcrypt(app)
 db = SQLAlchemy(app)
-_api_v2 = Api(app)
+api__v2 = Api(app)
 
 from project.users.views import users_blueprint
 from project.tasks.views import task_blueprint

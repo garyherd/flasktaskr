@@ -91,8 +91,8 @@ class TaskTest(unittest.TestCase):
         self.assertIn(b'You need to login first.', response.data)
 
     def test_users_can_add_tasks(self): #8 of 10
-        self.create_user('Michael', 'michael@realpython.com', 'python')
-        self.login('Michael', 'python')
+        self.create_user('Michael', 'michael@realpython.com', 'python2015')
+        self.login('Michael', 'python2015')
         self.app.get('tasks/', follow_redirects=True)
         response = self.create_task()
         self.assertIn(

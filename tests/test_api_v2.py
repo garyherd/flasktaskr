@@ -75,6 +75,17 @@ class APIv2Tests(unittest.TestCase):
                       confirm=confirm),
             follow_redirects=True)
 
+    def post_a_task(self):
+        self.register('Michael', 'michael@realpython.com', 'python2015',
+                      'python2015')
+        encoded = base64.standard_b64encode('Michael:python2015')
+        header = {'authorization': 'Basic {}'.format(encoded),
+                  'Content-Type': 'application/json'}
+        data = {'name': "test api task", 'due_date': '05/25/2018',
+                'priority': 6}
+        self.app.post('api/v2/tasks/', headers=header, data=json.dumps(data))
+        return header
+
     ################
     #### tests #####
     ################
@@ -113,13 +124,46 @@ class APIv2Tests(unittest.TestCase):
                   'Content-Type': 'application/json'}
         data = {'name': "test api task", 'due_date': '05/25/2018',
                 'priority': 6}
-        # data = dict(name="test api task", due_date='05/25/2018',
-        #         priority= 6)
+
         response = self.app.post('api/v2/tasks/', headers=header,
                                  data=json.dumps(data))
-        # response = requests.post(url='api/v2/tasks/',
-        #                          auth=HTTPBasicAuth('Michael', 'python2015'),
-        #                          data=data)
+
         self.assertEquals(response.status_code, 201)
         self.assertEquals(response.mimetype, 'application/json')
         self.assertIn(b'Entry was successfully posted', response.data)
+
+    def test_valid_user_can_update_a_task(self):
+        header = self.post_a_task()
+
+        updated_data = {'name': "test api task2", 'due_date': '05/25/2018',
+                'priority': 8}
+
+        response = self.app.put('api/v2/tasks/1', headers=header,
+                         data=json.dumps(updated_data))
+
+        self.assertEquals(response.status_code, 201)
+        self.assertEquals(response.mimetype, 'application/json')
+        self.assertIn(b'task updated successfully', response.data)
+
+    def test_valid_user_can_delete_task(self):
+        header = self.post_a_task()
+        response = self.app.delete('api/v2/tasks/1', headers=header)
+        self.assertEquals(response.status_code, 201)
+        self.assertIn(b'task deleted', response.data)
+
+    def test_401_error_update_a_task(self):
+        header = self.post_a_task()
+        encoded = base64.standard_b64encode('Michael:python2XXX')
+        header = {'authorization': 'Basic {}'.format(encoded),
+                  'Content-Type': 'application/json'}
+        updated_data = {'name': "test api task2", 'due_date': '05/25/2018',
+                'priority': 8}
+
+        response = self.app.put('api/v2/tasks/1', headers=header,
+                         data=json.dumps(updated_data))
+        self.assertEquals(response.status_code, 401)
+
+    def test_404_error_delete_a_task(self):
+        header = self.post_a_task()
+        response = self.app.delete('api/v2/tasks/5/', headers=header)
+        self.assertEquals(response.status_code, 404)

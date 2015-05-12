@@ -142,8 +142,8 @@
           <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.travis.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.19349593" vertical-offset="0" max-vertical-offset="1230">
-                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.15203252" vertical-offset="0" max-vertical-offset="1230">
+                  <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -835,7 +835,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431406542298</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="add heroku set-up to yaml file...again">
+      <created>1431407109696</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1431407109696</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -902,7 +908,8 @@
     <MESSAGE value="edit yaml file" />
     <MESSAGE value="another edit to yaml file" />
     <MESSAGE value="add heroku set-up to yaml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add heroku set-up to yaml file" />
+    <MESSAGE value="add heroku set-up to yaml file...again" />
+    <option name="LAST_COMMIT_MESSAGE" value="add heroku set-up to yaml file...again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1308,8 +1315,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19349593" vertical-offset="0" max-vertical-offset="1230">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.15203252" vertical-offset="0" max-vertical-offset="1230">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding />
         </state>
       </provider>

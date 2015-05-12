@@ -9,6 +9,6 @@ script:
 deploy:
   provider: heroku
   api_key: 13db2a87cfa99b4c21743fc880d4c8734ad7b26f
-  app: flasktaskr
+  app: obscure-coast-6563
   on:
     repo: garyherd/flasktaskr

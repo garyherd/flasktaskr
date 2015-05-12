@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b3077c4-2590-4309-9ada-305d8a4d5365" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/test.db" afterPath="$PROJECT_DIR$/project/test.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="flasktaskr.iws" />
@@ -806,7 +804,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431399005121</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="edit yaml file">
+      <created>1431401029895</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1431401029895</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -870,7 +874,8 @@
     <MESSAGE value="completed api, apiv2 with Flask RESTful ext" />
     <MESSAGE value="Fix run.py to pick correct host" />
     <MESSAGE value="add YAML file for TRavis CI" />
-    <option name="LAST_COMMIT_MESSAGE" value="add YAML file for TRavis CI" />
+    <MESSAGE value="edit yaml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit yaml file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -53,6 +53,11 @@ class MainTests(unittest.TestCase):
         self.assertEquals(response.status_code, 404)
         self.assertIn(b'Sorry. There\'s nothing here.', response.data)
 
+    def test_index(self):
+        """Ensure flask was set up properly. """
+        response = self.app.get('/', content_type='html/text')
+        self.assertEqual(response.status_code, 200)
+
     # def test_500_error(self):
     #     bad_user = User(
     #         name='Jeremy',

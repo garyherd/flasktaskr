@@ -6,5 +6,5 @@ __pycache__
 .coverage
 htmlcov
 error.log
-.idea
+.idea/
 rqmtsUnicode.txt

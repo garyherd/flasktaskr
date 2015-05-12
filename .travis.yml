@@ -11,4 +11,6 @@ deploy:
   api_key: 13db2a87cfa99b4c21743fc880d4c8734ad7b26f
   app: obscure-coast-6563
   on:
+    branch: master
+    python: '2.7'
     repo: garyherd/flasktaskr
